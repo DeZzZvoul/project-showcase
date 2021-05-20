@@ -2,12 +2,18 @@
 
 {% block content %}
 <h1>{{title}}</h1>
-    {% for p in projects %}
-    <div>
-        <h2>{{p.title}}</h2>
-        <p>{{p.shortdescription}}</p>
-        <p>Руководитель: {{p.project.get}}</p>
-        <p>Куратор: {{p.curator}}</p>
-    </div>
-    {% endfor %}
+        <div class="col-projects">
+            {% for p in projects %}
+            <div class="rect">
+                <div class="content">
+                    <div class="title">{{p.title}}</div>
+                    <div class="leader">Руководитель: {{p.project.get}}</div>
+                    <div class="tags">Тэги</div>
+                    <div class="description">{{p.shortdescription}}</div>
+                    <div class="curator">Куратор: {{p.curator}}</div>
+                    <button class="details">Подробнее</button>
+                </div>
+           </div>
+            {% endfor %}
+        </div>
 {% endblock %}
