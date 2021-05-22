@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Добавить проект - Проектная площадка ММФ НГУ</title>
-    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
-    <!-- ><link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <header>
@@ -22,41 +22,36 @@
 </header>
 <hr>
 <div class="under-header">
-<form name="addProject" action="">
-    <h2>Для добавления Вашего проекта, пожалуйста, заполните данную форму</h2>
-    <input type="text" name="project-name" required autofocus placeholder="Укажите название проекта"><br>
-    <input type="text" name="project-description-short" required placeholder="Кратко опишите суть Вашего проекта"><br>
-    <p>Выберите фотографию, характеризующую Ваш проект</p>
-    <input type="file" name="project-image"><br>
-    <textarea name="project-description-long" required>Дайте подробное описание Вашего проекта</textarea><br>
-    <p>Выберите куратора Вашего проекта из списка или, если он отсутствует в списке, введите его ФИО вручную</p>
-    <p>
-        <input type="radio" name="project-curator-name"> Имя 1<br>
-        <input type="radio" name="project-curator-name"> Имя 2<br>
-        <input type="radio" name="project-curator-name"> Имя 3<br>
-        <input type="text" name="project-curator-manual" placeholder="ФИО куратора"><br>
-    </p>
-    <p>Выберите из списка теги, подходящие Вашему проекту, или добавьте свои</p>
-    <p>
-        <input type="checkbox" name="project-tag"> Тег 1<br>
-        <input type="checkbox" name="project-tag"> Тег 2<br>
-        <input type="checkbox" name="project-tag"> Тег 3<br>
-        <input type="text" name="project-tag-add" placeholder="Добавьте Ваш тег">
-        <input type="button" name="project-tag-add-button" value="Ещё тег">
-    </p>
-    <hr>
-    <p>Добавьте участников Вашего проекта</p>
-    <input type="text" name="project-member-name" required placeholder="Имя"><br>
-    <input type="text" name="project-member-lastname" required placeholder="Фамилия"><br>
-    <input type="text" name="project-member-patronymic" required placeholder="Отчество"><br>
-    <input type="text" name="project-member-role" required placeholder="Роль в проекте"><br>
-    <input type="tel" name="project-member-phone" placeholder="Телефон"><br>
-    <p>Выберите фотографию участника</p>
-    <input type="file" name="project-member-avatar" placeholder="Имя"><br>
-    <input type="button" name="project-member-add-button" value="Ещё участник"><br>
-    <hr>
-    <input type="submit" name="project-send" placeholder="Отправить">
-</form>
+<div class="layout">
+    <form name="addProject" action="">
+        <h2>Для добавления Вашего проекта, пожалуйста, заполните данную форму</h2>
+        <input type="text" name="project-name" required autofocus placeholder="Укажите название проекта">
+        <textarea name="project-description-short" required placeholder="Кратко опишите суть Вашего проекта"></textarea>
+        <textarea name="project-description-long" required placeholder="Дайте подробное описание Вашего проекта"></textarea>
+        <p>Введите ФИО Вашего куратора</p>
+        <input type="text" name="curator-last-name" required placeholder="Фамилия">
+        <input type="text" name="curator-first-name" required placeholder="Имя">
+        <input type="text" name="curator-patronymic" required placeholder="Отчество">
+        <p>Введите тэги, подходящие Вашему проекту</p>
+        <input type="text" name="project-tag-add" placeholder="Введите тэг">
+        <button id="project-add-tag-button" value="Ещё тэг"><img src="../assets/Plus%20icon.svg"></button>
+        <hr>
+        <p>Добавьте участников Вашего проекта</p>
+        <input type="text" name="project-member-name" required placeholder="Имя">
+        <input type="text" name="project-member-last-name" required placeholder="Фамилия">
+        <input type="text" name="project-member-patronymic" required placeholder="Отчество">
+        <hr>
+        <input type="text" name="project-member-name" required placeholder="Имя">
+        <input type="text" name="project-member-last-name" required placeholder="Фамилия">
+        <input type="text" name="project-member-patronymic" required placeholder="Отчество">
+        <hr>
+        <label class="tag-attach">
+            <input type="button" name="project-member-add-button" value="Ещё участник">
+            <img src="../assets/Plus%20icon-1.svg" alt="Добавить участника">
+        </label>
+        <input type="submit" name="project-send" placeholder="Отправить">
+    </form>
+</div>
 </div>
 </body>
 </html>

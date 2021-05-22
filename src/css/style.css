@@ -1,6 +1,19 @@
-* {
-    font-family: Acrom, sans-serif;
-    box-sizing: border-box;
+h1 {
+    font-family: Montserrat sans-serif;
+}
+h2 {
+    font-family: Averta CY sans-serif;
+}
+h3, p {
+    font-family: Proxima Nova sans-serif;
+}
+hr {
+    margin-right: 15%;
+    margin-left: 15%;
+    color: #54b686;
+    border: none;
+    background-color: #54b686;
+    height: 2px;
 }
 header {
     top: 0;
@@ -16,28 +29,55 @@ header {
     padding-right: 60px;
 }
 .under-header {
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+.layout {
+    padding-right: 200px;
+    padding-left: 200px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.under-header {
     margin-top: 80px;
 }
 header .add-buttons {
+    display: inline-block;
+    height: 80px;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: bold;
-    margin-right: 60px;
+    margin-left: auto;
     text-align: right;
+    font-family: "Montserrat", sans-serif;
+    margin-top: calc(80px - 30px);
 }
 header .trans {
+    display: inline-block;
+    height: 80px;
+    position: relative;
     font-size: 16px;
     font-weight: normal;
     text-align: center;
+    font-family: "Averta CY", sans-serif;
 }
 header .trans a {
+    text-decoration: none;
+    color: #434242;
+    font-weight: normal;
     margin-right: 50px;
 }
 header #current {
     color: #54b686;
 }
 header .add-buttons a {
+    text-decoration: none;
+    color: #434242;
+    font-weight: bold;
     margin-right: 30px;
+}
+header .add-buttons a:hover {
+    color: #54b686;
 }
 #login-avatar {
     width: 20px;
@@ -76,4 +116,121 @@ header .add-buttons a {
     margin-top: 100px;
     font-size: 60px;
     color: black;
+}
+input {
+    font-family: "Averta CY", sans-serif;
+    font-size: 20px;
+    color: #434242;
+    box-sizing: border-box;
+}
+form * {
+    margin-bottom: 30px;
+}
+form p {
+    margin-left: 30px;
+    font-family: "Averta CY", sans-serif;
+    font-size: 20px;
+    color: #434242;
+}
+form .section-column {
+    display: inline-block;
+    width: 50%;
+}
+form h2 {
+    font-family: "Averta CY", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+form input[type=text], input[type=tel], input[type=email] {
+    box-sizing: border-box;
+    padding: 5px 30px;
+    height: 50px;
+    width: 45%;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 35px;
+}
+form textarea {
+    box-sizing: border-box;
+    padding: 5px 30px;
+    height: 200px;
+    width: 100%;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 35px;
+    font-family: "Averta CY", sans-serif;
+    font-size: 20px;
+    color: #434242;
+    resize: none;
+}
+form input[name=project-name], textarea[name=project-description-short] {
+    width: 100%;
+}
+form input[name=project-description-short] {
+    height: 180px;
+}
+form input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus {
+    outline: none;
+    border: 2px #54b686 solid;
+    padding: 3px 28px;
+}
+form textarea:focus {
+    outline: none;
+    border: 2px #54b686 solid;
+    padding: 3px 28px;
+}
+form input[name=project-tag-add] {
+    width: 20%;
+}
+form input[type=submit] {
+    width: 400px;
+    height: 50px;
+    background-color: #54b686;
+    border: none;
+    border-radius: 35px;
+    margin-left: calc(50% - 200px);
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+form input[name=curator-last-name] {
+    width: calc((100%) / 3 - 16px);
+    display: inline-block;
+    margin-right: 20px;
+}
+form input[name=curator-first-name] {
+    width: calc((100%) / 3 - 16px);
+    display: inline-block;
+    margin-right: 20px;
+}
+form input[name=curator-patronymic] {
+    width: calc((100%) / 3 - 16px);
+    display: inline-block;
+}
+form input[name=project-member-name] {
+    width: calc((100%) / 3 - 16px);
+    display: inline-block;
+    margin-right: 20px;
+}
+form input[name=project-member-last-name] {
+    width: calc((100%) / 3 - 16px);
+    display: inline-block;
+    margin-right: 20px;
+}
+form input[name=project-member-patronymic] {
+    width: calc((100%) / 3 - 16px);
+    display: inline-block;
+}
+form .tag-attach {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    margin-left: calc(50% - 35px);
+}
+form .tag-attach input[type=button] {
+    outline: 0;
+    opacity: 0;
 }
