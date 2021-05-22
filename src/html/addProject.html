@@ -17,10 +17,9 @@
     <nav class="add-buttons">
         <a id="current">ДОБАВИТЬ ПРОЕКТ</a>
         <a href="addProblem.html">ДОБАВИТЬ ПРОБЛЕМУ</a>
-        <a id="login" href="account.html"><img src="" alt=""></a>
     </nav>
+    <a id="login" href="account.html"><img src="../assets/Avatar.png" alt="Аватар"></a>
 </header>
-<hr>
 <div class="under-header">
 <div class="layout">
     <form name="addProject" action="">
@@ -32,10 +31,16 @@
         <input type="text" name="curator-last-name" required placeholder="Фамилия">
         <input type="text" name="curator-first-name" required placeholder="Имя">
         <input type="text" name="curator-patronymic" required placeholder="Отчество">
+        <p>Введите ФИО Вашего преподавателя</p>
+        <input type="text" name="teacher-last-name" required placeholder="Фамилия">
+        <input type="text" name="teacher-first-name" required placeholder="Имя">
+        <input type="text" name="teacher-patronymic" required placeholder="Отчество">
         <p>Введите тэги, подходящие Вашему проекту</p>
-        <input type="text" name="project-tag-add" placeholder="Введите тэг">
-        <button id="project-add-tag-button" value="Ещё тэг"><img src="../assets/Plus%20icon.svg"></button>
-        <hr>
+        <input type="text" name="project-tag-add-1" placeholder="Введите тэг">
+        <input type="text" name="project-tag-add-2" placeholder="Введите тэг">
+        <input type="text" name="project-tag-add-3" placeholder="Введите тэг">
+        <input type="text" name="project-tag-add-4" placeholder="Введите тэг">
+        <input type="text" name="project-tag-add-5" placeholder="Введите тэг">
         <p>Добавьте участников Вашего проекта</p>
         <input type="text" name="project-member-name" required placeholder="Имя">
         <input type="text" name="project-member-last-name" required placeholder="Фамилия">
@@ -45,10 +50,18 @@
         <input type="text" name="project-member-last-name" required placeholder="Фамилия">
         <input type="text" name="project-member-patronymic" required placeholder="Отчество">
         <hr>
-        <label class="tag-attach">
-            <input type="button" name="project-member-add-button" value="Ещё участник">
-            <img src="../assets/Plus%20icon-1.svg" alt="Добавить участника">
-        </label>
+        <input type="text" name="project-member-name" required placeholder="Имя">
+        <input type="text" name="project-member-last-name" required placeholder="Фамилия">
+        <input type="text" name="project-member-patronymic" required placeholder="Отчество">
+        <hr>
+        <input type="text" name="project-member-name" required placeholder="Имя">
+        <input type="text" name="project-member-last-name" required placeholder="Фамилия">
+        <input type="text" name="project-member-patronymic" required placeholder="Отчество">
+        <hr>
+        <input type="text" name="project-member-name" required placeholder="Имя">
+        <input type="text" name="project-member-last-name" required placeholder="Фамилия">
+        <input type="text" name="project-member-patronymic" required placeholder="Отчество">
+        <hr>
         <input type="submit" name="project-send" placeholder="Отправить">
     </form>
 </div>

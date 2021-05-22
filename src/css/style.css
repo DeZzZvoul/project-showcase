@@ -1,11 +1,15 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
 h1 {
-    font-family: Montserrat sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 h2 {
-    font-family: Averta CY sans-serif;
+    font-family: "Averta CY", sans-serif;
 }
 h3, p {
-    font-family: Proxima Nova sans-serif;
+    font-family: "Proxima Nova", sans-serif;
 }
 hr {
     margin-right: 15%;
@@ -23,39 +27,27 @@ header {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     position: fixed;
     display: block;
-    width: 100%;
+    width: 100vw;
     height: 80px;
-    padding-left: 60px;
-    padding-right: 60px;
-}
-.under-header {
-    top: 0;
-    right: 0;
-    width: 100%;
-}
-.layout {
-    padding-right: 200px;
-    padding-left: 200px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-}
-.under-header {
-    margin-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 header .add-buttons {
     display: inline-block;
-    height: 80px;
+    position: absolute;
+    top: 26px;
+    right: 150px;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: bold;
-    margin-left: auto;
     text-align: right;
     font-family: "Montserrat", sans-serif;
-    margin-top: calc(80px - 30px);
 }
 header .trans {
     display: inline-block;
-    height: 80px;
-    position: relative;
+    position: absolute;
+    top: 32px;
+    left: 5%;
     font-size: 16px;
     font-weight: normal;
     text-align: center;
@@ -79,9 +71,25 @@ header .add-buttons a {
 header .add-buttons a:hover {
     color: #54b686;
 }
-#login-avatar {
-    width: 20px;
+header #login img {
+    position: absolute;
+    right: 90px;
+    top: 15px;
+    width: 50px;
     height: auto;
+}
+.under-header {
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 80px;
+}
+.layout {
+    width: 70%;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 #mmd-logo-green {
     display: inline-block;
@@ -94,6 +102,8 @@ header .add-buttons a:hover {
 }
 .main-page-title title {
     display: inline-block;
+    position: absolute;
+    left: 500px;
 }
 .main-page-title #mmd-logo-green {
     display: inline-block;
@@ -140,6 +150,7 @@ form h2 {
     font-family: "Averta CY", sans-serif;
     font-size: 50px;
     font-weight: 400;
+    padding-top: 30px;
 }
 form input[type=text], input[type=tel], input[type=email] {
     box-sizing: border-box;
@@ -169,18 +180,17 @@ form input[name=project-name], textarea[name=project-description-short] {
 form input[name=project-description-short] {
     height: 180px;
 }
-form input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus {
+form input[type=text]:focus, form input[type=tel]:focus, form input[type=email]:focus, form textarea:focus {
     outline: none;
     border: 2px #54b686 solid;
     padding: 3px 28px;
 }
-form textarea:focus {
-    outline: none;
-    border: 2px #54b686 solid;
-    padding: 3px 28px;
+form input[name=project-tag-add-1], form input[name=project-tag-add-2], form input[name=project-tag-add-3], form input[name=project-tag-add-4] {
+    width: calc(100% / 5 - 20px);
+    margin-right: 21px;
 }
-form input[name=project-tag-add] {
-    width: 20%;
+form input[name=project-tag-add-5] {
+    width: calc(100% / 5 - 20px);
 }
 form input[type=submit] {
     width: 400px;
@@ -195,26 +205,16 @@ form input[type=submit] {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
-form input[name=curator-last-name] {
+form input[name=curator-last-name], form input[name=teacher-last-name], form input[name=curator-first-name], form input[name=teacher-first-name] {
     width: calc((100%) / 3 - 16px);
     display: inline-block;
     margin-right: 20px;
 }
-form input[name=curator-first-name] {
-    width: calc((100%) / 3 - 16px);
-    display: inline-block;
-    margin-right: 20px;
-}
-form input[name=curator-patronymic] {
+form input[name=curator-patronymic], form input[name=teacher-patronymic] {
     width: calc((100%) / 3 - 16px);
     display: inline-block;
 }
-form input[name=project-member-name] {
-    width: calc((100%) / 3 - 16px);
-    display: inline-block;
-    margin-right: 20px;
-}
-form input[name=project-member-last-name] {
+form input[name=project-member-name], form input[name=project-member-last-name] {
     width: calc((100%) / 3 - 16px);
     display: inline-block;
     margin-right: 20px;
@@ -222,15 +222,4 @@ form input[name=project-member-last-name] {
 form input[name=project-member-patronymic] {
     width: calc((100%) / 3 - 16px);
     display: inline-block;
-}
-form .tag-attach {
-    display: block;
-    cursor: pointer;
-    width: 35px;
-    height: 35px;
-    margin-left: calc(50% - 35px);
-}
-form .tag-attach input[type=button] {
-    outline: 0;
-    opacity: 0;
 }
