@@ -93,24 +93,23 @@ header #login img {
 .main-page-title {
     text-transform: uppercase;
     background-color: #54b686;
-    height: 240px;
+    height: 160px;
     color: white;
-    padding-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
     box-sizing: border-box;
     position: relative;
 }
 .main-page-title title {
+    width: fit-content;
     display: inline-block;
-    position: absolute;
-    left: 500px;
 }
-.main-page-title .mmd-logo-green {
+.main-page-title .mmd-logo-gray {
     display: inline-block;
 }
 .main-page-title .title h1 {
-    font-size: 10px;
+    font-size: 10px
 }
 .main-page-title .title h3 {
     font-size: 15px;
@@ -118,14 +117,12 @@ header #login img {
 .main-button-projects, .main-button-teachers, .main-button-problems {
     display: inline-block;
     width: calc(100% / 3);
-    height: 410px;
+    height: 490px;
     background-color: white;
     margin-right: -4px;
     text-decoration: none;
     color: #434242;
     box-sizing: border-box;
-    padding-left: 50px;
-    padding-right: 50px;
     background-size: cover;
 }
 .main-button-projects p, .main-button-teachers p, .main-button-problems p {
@@ -182,7 +179,7 @@ form h2 {
     font-weight: 400;
     padding-top: 30px;
 }
-form input[type=text], input[type=tel], input[type=email] {
+form input[type=text], input[type=tel], input[type=email], input[type=password] {
     box-sizing: border-box;
     padding: 5px 30px;
     height: 50px;
@@ -210,7 +207,7 @@ form input[name=project-name], textarea[name=project-description-short] {
 form input[name=project-description-short] {
     height: 180px;
 }
-form input[type=text]:focus, form input[type=tel]:focus, form input[type=email]:focus, form textarea:focus {
+form input[type=text]:focus, form input[type=tel]:focus, form input[type=email]:focus, form input[type=password]:focus form textarea:focus {
     outline: none;
     border: 2px #54b686 solid;
     padding: 3px 28px;
@@ -302,6 +299,21 @@ form input[name=project-member-patronymic] {
     color: #434242;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+form[name=login] {
+    margin-top: 15%;
+}
+form[name=login] input {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+form[name=login] .log-in {
+    width: fit-content;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 /* footer stylization */
 footer {
