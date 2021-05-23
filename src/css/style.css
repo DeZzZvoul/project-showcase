@@ -1,7 +1,3 @@
-html {
-    position: relative;
-    min-height: 100%;
-}
 h1 {
     font-family: "Montserrat", sans-serif;
 }
@@ -19,24 +15,26 @@ hr {
     background-color: #54b686;
     height: 2px;
 }
+/* header stylisation */
 header {
+    z-index: 9999;
     top: 0;
     left: 0;
     margin: 0;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    position: fixed;
     display: block;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     padding-left: 30px;
     padding-right: 30px;
+    box-sizing: border-box;
 }
 header .add-buttons {
     display: inline-block;
     position: absolute;
     top: 26px;
-    right: 150px;
+    right: 120px;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: bold;
@@ -73,59 +71,90 @@ header .add-buttons a:hover {
 }
 header #login img {
     position: absolute;
-    right: 90px;
+    right: 60px;
     top: 15px;
     width: 50px;
     height: auto;
 }
+/* !header stylisation */
 .under-header {
     top: 0;
     right: 0;
     width: 100%;
-    margin-top: 80px;
 }
 .layout {
+    box-sizing: border-box;
     width: 70%;
     margin: 0 auto;
     padding-right: 20px;
     padding-left: 20px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
-#mmd-logo-green {
-    display: inline-block;
-}
 .main-page-title {
     text-transform: uppercase;
     background-color: #54b686;
     height: 240px;
     color: white;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    position: relative;
 }
 .main-page-title title {
     display: inline-block;
     position: absolute;
     left: 500px;
 }
-.main-page-title #mmd-logo-green {
+.main-page-title .mmd-logo-green {
     display: inline-block;
-    margin-left: 10%;
 }
 .main-page-title .title h1 {
-    font-size: 50px;
+    font-size: 10px;
 }
 .main-page-title .title h3 {
     font-size: 15px;
 }
-.bbutton {
+.main-button-projects, .main-button-teachers, .main-button-problems {
     display: inline-block;
-    width: 33%;
-    height: 800px;
+    width: calc(100% / 3);
+    height: 410px;
     background-color: white;
+    margin-right: -4px;
+    text-decoration: none;
+    color: #434242;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-size: cover;
 }
-.bbutton h2 {
+.main-button-projects p, .main-button-teachers p, .main-button-problems p {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 20px;
+    color: transparent;
+}
+.main-button-projects:hover p, .main-button-teachers:hover p, .main-button-problems:hover p {
+    color: white;
+}
+.main-button-projects {
+    background-image: url(../assets/projects-page-picture.png);
+}
+.main-button-teachers {
+    background-image: url(../assets/teachers-page-picture.png);
+}
+.main-button-problems {
+    background-image: url(../assets/problems-page-picture.png);
+}
+.main-button-projects:hover, .main-button-teachers:hover, .main-button-problems:hover {
+    background-color: #54b686;
+    color: white;
+    background-image: none;
+}
+.main-button-projects h2, .main-button-teachers h2, .main-button-problems h2 {
     text-align: center;
     margin-top: 100px;
-    font-size: 60px;
-    color: black;
+    font-size: 50px;
+    margin-bottom: 30px;
 }
 input {
     font-family: "Averta CY", sans-serif;
@@ -133,6 +162,7 @@ input {
     color: #434242;
     box-sizing: border-box;
 }
+/* forms stylisation */
 form * {
     margin-bottom: 30px;
 }
@@ -223,3 +253,94 @@ form input[name=project-member-patronymic] {
     width: calc((100%) / 3 - 16px);
     display: inline-block;
 }
+/* !forms stylisation */
+.teacher-card {
+    width: 610px;
+    height: 376px;
+    border-radius: 20px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 20px 30px;
+}
+.teacher-card .left-section {
+    width: 188px;
+    height: 188px;
+    display: inline-block;
+
+}
+.teacher-card .right-section {
+    width: 350px;
+    height: 100%;
+    display: inline-block;
+}
+.teacher-card .teacher-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.teacher-card .teacher-description {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 20px;
+    color: #898989;
+}
+.teacher-card img {
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+}
+.feed-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    color: #434242;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* footer stylization */
+footer {
+    background-color: black;
+    height: 120px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+footer .question {
+    text-transform: initial;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+footer .write-us-button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+}
+footer .write-us-button a {
+    background-color: transparent;
+    text-decoration: none;
+}
+footer .write-us-button a:hover {
+    color: black;
+}
+/* !footer stylization */
