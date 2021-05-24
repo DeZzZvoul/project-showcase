@@ -201,13 +201,13 @@ form textarea {
     color: #434242;
     resize: none;
 }
-form input[name=project-name], textarea[name=project-description-short] {
+form input[name=project-name], form textarea[name=project-description-short] {
     width: 100%;
 }
 form input[name=project-description-short] {
     height: 180px;
 }
-form input[type=text]:focus, form input[type=tel]:focus, form input[type=email]:focus, form input[type=password]:focus form textarea:focus {
+form input[type=text]:focus, form input[type=tel]:focus, form input[type=email]:focus, form input[type=password]:focus, form textarea:focus {
     outline: none;
     border: 2px #54b686 solid;
     padding: 3px 28px;
