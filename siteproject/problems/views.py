@@ -1,17 +1,22 @@
-from http.client import HTTPResponse
-
-from django.shortcuts import render, redirect
+from django.http import HttpResponse, HttpResponseNotFound, Http404
+from django.shortcuts import render, redirect, get_object_or_404
 
 from .forms import AddProjectForm
 from .models import *
 projects = Projects.objects.all()
 p = Projects.objects.get(id = 1)
-menu = ["Главная", "Проекты", "Информация", "Проблемы", "ДОБАВИТЬ ПРОБЛЕМУ", "ДОБАВИТЬ ПРОЕКТ", "Авторизация"]
+menu = ["Главная", "Проекты","Преподаватели", "Проблемы"]
+buttons = ["ДОБАВИТЬ ПРОБЛЕМУ", "ДОБАВИТЬ ПРОЕКТ"]
 def index(request):
-    return render(request,'problems/index.html', {'projects': projects,'menu': menu, 'title': 'Проекты'})
+    projects = Projects.objects.all()
+    return render(request,'problems/index.html', {'projects': projects,'menu': menu, 'title': 'Проекты', 'buttons':buttons})
+
+def projectpage(request, pr_id):
+    p = get_object_or_404(Projects, pk=pr_id)
+    return render(request, 'problems/project_page.html', {'menu': menu,'buttons':buttons,'p': p})
 
 def main(request):
-    return  render(request,'problems/base.html', {'menu': menu, 'title': 'Проектная площадка ММФ НГУ'})
+    return  render(request,'problems/base.html', {'menu': menu,'buttons':buttons, 'title': 'Проектная площадка ММФ НГУ'})
 
 def addpage(request):
     if request.method == 'POST':

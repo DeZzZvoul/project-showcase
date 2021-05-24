@@ -1,0 +1,261 @@
+
+        @media (min-width: 1360px) {
+            .col-projects{
+                width: 1300px;
+                grid-auto-columns: 615px;
+                grid-auto-rows: 450px;
+            }
+            .content{
+                width: 555px;
+                height: 410px;
+            }
+            .rect{
+                width: 615px;
+                height: 450px;
+            }
+            .details{
+                width: 150px;
+                height: 44px;
+            }
+            .description{
+                height: 236px;
+            }
+            .title{
+                height: 74px;
+            }
+            .curator{
+                position: relative;
+            }
+        }
+        @media (min-width: 1100px) and (max-width: 1359px) {
+            .col-projects{
+                width: 1070px;
+                grid-auto-columns: 505px;
+                grid-auto-rows: 395px;
+                grid-gap: 70px;
+            }
+        }
+        .col-projects {
+            margin-right: auto;
+            margin-left: auto;
+            display: grid;
+            grid-gap: 5.38%;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .rect{
+            border-radius: 20px;
+            background: #FFFFFF 0% 0%;
+            box-shadow: 0px 3px 20px #00000029;
+            opacity: 1;
+        }
+        .content{
+            position: relative;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .title{
+            position: relative;
+            color: #434242;
+            text-align: left;
+            font: normal normal bold 30px/37px Montserrat;
+        }
+        .leader{
+            position: relative;
+        }
+        .tags{
+            position: relative;
+            color: #434242;
+            font: normal normal normal 15px/20px Averta CY;
+            opacity: 1;
+        }
+        .description{
+            position: relative;
+            color: #898989;
+            text-align: center;
+            font: normal normal normal 20px/24px Proxima Nova;
+        }
+        .curator{
+            position: relative;
+            color: #434242;
+            opacity: 1;
+        }
+        .details{
+            border: none;
+            position: relative;
+            margin-right: 0px;
+            margin-left: auto;
+            background: #54B686 0% 0% no-repeat padding-box;
+            border-radius: 15px;
+            opacity: 1;
+        }
+        .details{
+            font-family: Averta CY;
+            font-size: 15px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+        .details a{
+            text-decoration: none;
+        }
+        .project_rect{
+            width: 1300px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            background: #FFFFFF 0% 0%;
+            box-shadow: 0px 3px 20px #00000029;
+            opacity: 1;
+        }
+        .pr_content{
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .title_rect{
+            position: relative;
+            width: 1240px;
+            height: 180px;
+            background: var(--mmd-color) 0% 0% no-repeat padding-box;
+            background: #54B687 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 35px;
+            opacity: 1;
+        }
+        .pr_title{
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-70)/86px var(--unnamed-font-family-montserrat);
+            letter-spacing: var(--unnamed-character-spacing-0);
+            color: var(--white);
+            text-align: center;
+            font: normal normal bold 70px/86px Montserrat;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+        .pr_h{
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-37) var(--unnamed-font-family-montserrat);
+            letter-spacing: var(--unnamed-character-spacing-0);
+            color: var(--black);
+            text-align: left;
+            font: normal normal bold 30px/37px Montserrat;
+            letter-spacing: 0px;
+            color: #000000;
+        }
+        .pr{
+            padding-top: 1em;
+            padding-bottom: 1em;
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-37) Proxima Nova;
+            letter-spacing: var(--unnamed-character-spacing-0);
+            color: var(--black);
+            text-align: left;
+            font: normal normal normal 30px/37px Proxima Nova;
+            letter-spacing: 0px;
+            color: #000000;
+        }
+        .more{
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-15)/20px Averta CY;
+            letter-spacing: var(--unnamed-character-spacing-0);
+            color: var(--white);
+            text-align: center;
+            font: normal normal normal 15px/20px Averta CY;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+        header{
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            width:1300px;
+            max-width: 100%;
+        }
+        ul {
+            list-style-type: none;
+        }
+        ul {
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            height: 60px;
+            padding-inline-start: 0px;
+            display: flex;
+            flex-flow: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+        }
+        .trans_a {
+            padding: 10px 15px;
+        }
+        .menu{
+            text-transform: uppercase;
+            text-decoration: none;
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-16)/21px Averta CY;
+            letter-spacing: var(--unnamed-character-spacing-0);
+            color: var(--black);
+            text-align: left;
+            font: normal normal 300 16px/21px Averta CY;
+            letter-spacing: 0px;
+            opacity: 1;
+        }
+        .add-buttons{
+            padding: 10px 15px;
+        }
+        .account{
+            width: 50px;
+            height: 50px;
+            margin-right: 2em;
+            background: url('../images/Avatar.png') no-repeat;
+        }
+
+        header .add-buttons_text {
+            text-transform: uppercase;
+            text-decoration: none;
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-37) var(--unnamed-font-family-montserrat);
+            letter-spacing: var(--unnamed-character-spacing-0);
+            color: var(--black);
+            text-align: left;
+            font: normal normal bold 30px/37px Montserrat;
+            letter-spacing: 0px;
+            opacity: 1;
+        }
+        header .trans_a {
+            font-weight: normal;
+        }
+        header #current {
+            color: #54b686;
+        }
+        header .add-buttons a {
+            text-decoration: none;
+            color: #434242;
+            font-weight: bold;
+        }
+        header .trans_a a {
+            text-decoration: none;
+            color: #434242;
+            font-weight: bold;
+        }
+        header .add-buttons a:hover {
+            color: #54b686;
+        }
+        header .trans_a a:hover{
+            color: #54b686;
+        }
+        .under-header {
+            top: 0;
+            right: 0;
+            width: 100%;
+        }
+        .layout {
+            width: 70%;
+            margin: 0 auto;
+            padding-right: 20px;
+            padding-left: 20px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        }

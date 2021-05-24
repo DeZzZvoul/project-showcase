@@ -1,17 +1,16 @@
 {% extends 'problems/base.html' %}
 
 {% block content %}
-<h1>{{title}}</h1>
         <div class="col-projects">
             {% for p in projects %}
             <div class="rect">
                 <div class="content">
                     <div class="title">{{p.title}}</div>
                     <div class="leader">Руководитель: {{p.project.get}}</div>
+                    <div class="curator">Куратор: {{p.curator}}</div>
                     <div class="tags">Тэги</div>
                     <div class="description">{{p.shortdescription}}</div>
-                    <div class="curator">Куратор: {{p.curator}}</div>
-                    <button class="details">Подробнее</button>
+                    <button class="details"><a href="{{p.get_absolute_url}}"><div class="more">Подробнее</div></a></button>
                 </div>
            </div>
             {% endfor %}
