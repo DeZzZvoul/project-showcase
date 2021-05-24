@@ -137,7 +137,6 @@
         .pr_title{
             padding-top: 30px;
             font-family: "Montserrat", sans-serif;
-            color: var(--white);
             text-align: center;
             font: normal normal bold 70px/86px Montserrat;
             letter-spacing: 0px;
@@ -145,25 +144,23 @@
             opacity: 1;
         }
         .pr_h{
+            font-family: "Montserrat", sans-serif;
             padding-top: 30px;
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-37) var(--unnamed-font-family-montserrat);
-            letter-spacing: var(--unnamed-character-spacing-0);
-            color: var(--black);
             text-align: left;
-            font: normal normal bold 30px/37px Montserrat;
             letter-spacing: 0px;
-            color: #000000;
+            color: #434242;
+            font-size: 30px;
+            font: normal normal bold 30px/37px Montserrat;
         }
         .pr{
             padding-top: 1em;
             padding-bottom: 1em;
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-37) Proxima Nova;
-            letter-spacing: var(--unnamed-character-spacing-0);
+            font-family: "Proxima Nova", sans-serif;
             color: var(--black);
             text-align: left;
-            font: normal normal normal 30px/37px Proxima Nova;
+            font: normal normal normal 20px/26px Proxima Nova;
             letter-spacing: 0px;
-            color: #000000;
+            color: #434242;
         }
         .more{
             font-family: "Averta CY", sans-serif;
