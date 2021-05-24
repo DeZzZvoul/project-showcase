@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="{% static 'problems/css/styles.css' %}" rel="stylesheet" />
+    <link type="text/css" href="{% static 'problems/css/fonts.css' %}" rel="stylesheet" />
     <link rel="shortcut icon" href="{% static 'problems/images/avatar.png' %}" type="image/x-icon"/>
     <title>{{ title }}</title>
 
@@ -16,8 +17,8 @@
         <ul>
             <li class="trans_a"><a href="{% url 'home' %}"><div class="menu">Главная</div></a></li>
             <li class="trans_a"><a href="{% url 'home' %}"><div class="menu">Проекты</div></a></li>
-            <li class="trans_a"><a href="{% url 'home' %}"><div class="menu">Преподаватели</div></a></li>
-            <li class="trans_a"><a href="{% url 'home' %}"><div class="menu">Главная</div></a></li>
+            <li class="trans_a"><a href="{% url 'home' %}"><div class="menu">Информация</div></a></li>
+            <li class="trans_a"><a href="{% url 'home' %}"><div class="menu">Проблемы</div></a></li>
             <li class="add-buttons"><a href="{% url 'add_page' %}"><div class="add-buttons_text">Добавить проблему</div></a> </li>
             <li class="add-buttons"><a href="{% url 'add_page' %}"><div class="add-buttons_text">Добавить проект</div></a> </li>
         </ul>

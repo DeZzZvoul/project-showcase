@@ -1,0 +1,18 @@
+{% extends 'problems/base.html' %}
+{% block content %}
+<div class="project_rect">
+    <div class="pr_content">
+        <div class="title_rect">
+            <div class="pr_title">{{p.title}}</div>
+        </div>
+        <div class="pr_h">Анализ ситуации</div>
+        <div class="pr">{{p.analysis}}</div>
+        <div class="pr_h">Проблема</div>
+        <div class="pr">{{p.problem}}</div>
+        <div class="pr_h">Описание проекта</div>
+        <div class="pr">{{p.description}}</div>
+        <div class="pr_h">Менеджер</div>
+        <div class="leader">{{p.project.get}}</div>
+    </div>
+</div>
+{% endblock %}

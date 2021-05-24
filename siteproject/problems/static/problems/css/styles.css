@@ -1,4 +1,4 @@
-
+{% load static %}
         @media (min-width: 1360px) {
             .col-projects{
                 width: 1300px;
@@ -14,14 +14,18 @@
                 height: 450px;
             }
             .details{
+                position: relative;
+                left: 100%;
+                transform: translateX(-100%);
                 width: 150px;
                 height: 44px;
             }
             .description{
-                height: 236px;
+                padding-top: 10px;
+                height: 252px;
             }
             .title{
-                height: 74px;
+
             }
             .curator{
                 position: relative;
@@ -56,24 +60,31 @@
             padding-right: 30px;
         }
         .title{
+            padding-bottom: 20px;
             position: relative;
             color: #434242;
             text-align: left;
+            font-family: "Montserrat", sans-serif;
             font: normal normal bold 30px/37px Montserrat;
         }
         .leader{
+            font-family: "Averta CY", sans-serif;
+            font: normal normal normal 20px/26px Averta CY;
+            color: #434242;
             position: relative;
         }
         .tags{
+            font-family: "Proxima Nova", sans-serif;
             position: relative;
             color: #434242;
-            font: normal normal normal 15px/20px Averta CY;
+            font: normal normal normal 15px/20px;
             opacity: 1;
         }
         .description{
+            font-family: "Proxima Nova", sans-serif;
             position: relative;
             color: #898989;
-            text-align: center;
+            text-align: left;
             font: normal normal normal 20px/24px Proxima Nova;
         }
         .curator{
@@ -83,16 +94,14 @@
         }
         .details{
             border: none;
-            position: relative;
-            margin-right: 0px;
-            margin-left: auto;
+
             background: #54B686 0% 0% no-repeat padding-box;
             border-radius: 15px;
             opacity: 1;
         }
         .details{
             font-family: Averta CY;
-            font-size: 15px;
+            font: normal normal normal 15px/20px Averta CY;
             text-align: center;
             color: white;
             font-weight: bold;
@@ -126,8 +135,8 @@
             opacity: 1;
         }
         .pr_title{
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-70)/86px var(--unnamed-font-family-montserrat);
-            letter-spacing: var(--unnamed-character-spacing-0);
+            padding-top: 30px;
+            font-family: "Montserrat", sans-serif;
             color: var(--white);
             text-align: center;
             font: normal normal bold 70px/86px Montserrat;
@@ -136,6 +145,7 @@
             opacity: 1;
         }
         .pr_h{
+            padding-top: 30px;
             font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-37) var(--unnamed-font-family-montserrat);
             letter-spacing: var(--unnamed-character-spacing-0);
             color: var(--black);
@@ -156,9 +166,7 @@
             color: #000000;
         }
         .more{
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-15)/20px Averta CY;
-            letter-spacing: var(--unnamed-character-spacing-0);
-            color: var(--white);
+            font-family: "Averta CY", sans-serif;
             text-align: center;
             font: normal normal normal 15px/20px Averta CY;
             letter-spacing: 0px;
@@ -196,8 +204,7 @@
         .menu{
             text-transform: uppercase;
             text-decoration: none;
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-16)/21px Averta CY;
-            letter-spacing: var(--unnamed-character-spacing-0);
+            font-family: "Averta CY", sans-serif;
             color: var(--black);
             text-align: left;
             font: normal normal 300 16px/21px Averta CY;
@@ -217,11 +224,11 @@
         header .add-buttons_text {
             text-transform: uppercase;
             text-decoration: none;
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-37) var(--unnamed-font-family-montserrat);
-            letter-spacing: var(--unnamed-character-spacing-0);
+            font-family: "Montserrat", sans-serif;
             color: var(--black);
             text-align: left;
-            font: normal normal bold 30px/37px Montserrat;
+            font: normal normal bold Montserrat;
+            font-size: 28px;
             letter-spacing: 0px;
             opacity: 1;
         }
@@ -251,11 +258,4 @@
             top: 0;
             right: 0;
             width: 100%;
-        }
-        .layout {
-            width: 70%;
-            margin: 0 auto;
-            padding-right: 20px;
-            padding-left: 20px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
         }
