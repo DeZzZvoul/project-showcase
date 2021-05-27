@@ -251,8 +251,8 @@
         header .trans_a a:hover{
             color: #54b686;
         }
-        .under-header {
-            top: 0;
-            right: 0;
-            width: 100%;
+        .layout{
+            width: 1300px;
+            margin-right: auto;
+            margin-left: auto;
         }
