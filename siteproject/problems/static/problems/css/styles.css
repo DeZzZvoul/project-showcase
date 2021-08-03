@@ -1,87 +1,97 @@
 {% load static %}
+body{
+    margin: 0 0 0 0;
+}
         @media (min-width: 1360px) {
             .col-projects{
                 width: 1300px;
-                grid-auto-columns: 615px;
-                grid-auto-rows: 450px;
+                grid-template-columns: repeat(2, 1fr);
             }
             .content{
+                width: 100%;
+                height: 100%;
+            }
+            .rect{
                 width: 555px;
                 height: 410px;
             }
-            .rect{
-                width: 615px;
-                height: 450px;
-            }
             .details{
-                position: relative;
-                left: 100%;
                 transform: translateX(-100%);
-                width: 150px;
-                height: 44px;
-            }
-            .description{
-                padding-top: 10px;
-                height: 252px;
-            }
-            .title{
-
             }
             .curator{
                 position: relative;
             }
         }
         @media (min-width: 1100px) and (max-width: 1359px) {
+            .details{
+                transform: translateX(-100%);
+            }
             .col-projects{
-                width: 1070px;
-                grid-auto-columns: 505px;
-                grid-auto-rows: 395px;
-                grid-gap: 70px;
+                width: 1040px;
+                padding: 20px 30px 20px 30px;
+               grid-template-columns: repeat(2, 1fr);
+            }
+            .content{
+                width: 100%;
+                height: 100%;
             }
         }
+        @media  (max-width: 1099px) {
+            .rect{
+                height: 100%;
+            }
+            .details{
+                transform: translateX(-100%);
+            }
+            .col-projects{
+                max-width: 675px;
+                padding: 20px 30px 20px 30px;
+            }
+            .content{
+                width: 100%;
+                height: 100%;
+            }
+                }
         .col-projects {
             margin-right: auto;
             margin-left: auto;
             display: grid;
             grid-gap: 5.38%;
-            grid-template-columns: repeat(2, 1fr);
         }
         .rect{
+            padding: 20px 30px 20px 30px;
             border-radius: 20px;
-            background: #FFFFFF 0% 0%;
-            box-shadow: 0px 3px 20px #00000029;
+            background: #FFFFFF 0 0;
+            box-shadow: 0 3px 20px #00000029;
             opacity: 1;
+            max-width: 615px;
+            max-height: 600px;
         }
         .content{
             position: relative;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-left: 30px;
-            padding-right: 30px;
+            max-width: 555px;
+            max-height: 600px;
         }
         .title{
-            padding-bottom: 20px;
             position: relative;
             color: #434242;
             text-align: left;
-            font-family: "Montserrat", sans-serif;
-            font: normal normal bold 30px/37px Montserrat;
+            font: normal normal bold 26px/30px Montserrat;
         }
         .leader{
-            font-family: "Averta CY", sans-serif;
             font: normal normal normal 20px/26px Averta CY;
             color: #434242;
             position: relative;
         }
         .tags{
-            font-family: "Proxima Nova", sans-serif;
             position: relative;
             color: #434242;
-            font: normal normal normal 15px/20px;
+            font: normal normal normal 15px/20px Proxima Nova;
             opacity: 1;
+            padding-top: 10px;
+            padding-bottom: 15px;
         }
         .description{
-            font-family: "Proxima Nova", sans-serif;
             position: relative;
             color: #898989;
             text-align: left;
@@ -93,14 +103,15 @@
             opacity: 1;
         }
         .details{
-            border: none;
 
-            background: #54B686 0% 0% no-repeat padding-box;
+            position: relative;
+            left: 100%;
+            width: 150px;
+            height: 44px;
+            border: none;
+            background: #54B686 0 0 no-repeat padding-box;
             border-radius: 15px;
             opacity: 1;
-        }
-        .details{
-            font-family: Averta CY;
             font: normal normal normal 15px/20px Averta CY;
             text-align: center;
             color: white;
@@ -114,80 +125,71 @@
             margin-left: auto;
             margin-right: auto;
             border-radius: 20px;
-            background: #FFFFFF 0% 0%;
-            box-shadow: 0px 3px 20px #00000029;
+            background: #FFFFFF 0 0;
+            box-shadow: 0 3px 20px #00000029;
             opacity: 1;
         }
         .pr_content{
-            padding-right: 30px;
-            padding-left: 30px;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding: 20px 30px 20px 30px;
         }
         .title_rect{
             position: relative;
             width: 1240px;
             height: 180px;
-            background: var(--mmd-color) 0% 0% no-repeat padding-box;
-            background: #54B687 0% 0% no-repeat padding-box;
-            box-shadow: 0px 3px 6px #00000029;
+            background: #54B687 0 0 no-repeat padding-box;
+            box-shadow: 0 3px 6px #00000029;
             border-radius: 35px;
             opacity: 1;
         }
         .pr_title{
             padding-top: 30px;
-            font-family: "Montserrat", sans-serif;
             text-align: center;
-            font: normal normal bold 70px/86px Montserrat;
-            letter-spacing: 0px;
+            font: normal normal bold 70px/80px Montserrat;
+            letter-spacing: 0;
             color: #FFFFFF;
             opacity: 1;
         }
         .pr_h{
-            font-family: "Montserrat", sans-serif;
             padding-top: 30px;
             text-align: left;
-            letter-spacing: 0px;
+            letter-spacing: 0;
             color: #434242;
-            font-size: 30px;
             font: normal normal bold 30px/37px Montserrat;
         }
         .pr{
             padding-top: 1em;
             padding-bottom: 1em;
-            font-family: "Proxima Nova", sans-serif;
-            color: var(--black);
             text-align: left;
             font: normal normal normal 20px/26px Proxima Nova;
-            letter-spacing: 0px;
+            letter-spacing: 0;
             color: #434242;
         }
         .more{
-            font-family: "Averta CY", sans-serif;
             text-align: center;
             font: normal normal normal 15px/20px Averta CY;
-            letter-spacing: 0px;
+            letter-spacing: 0;
             color: #FFFFFF;
             opacity: 1;
         }
         header{
-            margin-right: auto;
-            margin-left: auto;
+            width: 100%;
+        }
+        .header-contain{
+            max-width: 80%;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 60px;
-            width:1300px;
-            max-width: 100%;
+            height: 80px;
         }
         ul {
             list-style-type: none;
         }
         ul {
-            margin-block-start: 0px;
-            margin-block-end: 0px;
+            margin-block-start: 0;
+            margin-block-end: 0;
             height: 60px;
-            padding-inline-start: 0px;
+            padding-inline-start: 0;
             display: flex;
             flex-flow: nowrap;
             flex-direction: row;
@@ -201,11 +203,10 @@
         .menu{
             text-transform: uppercase;
             text-decoration: none;
-            font-family: "Averta CY", sans-serif;
-            color: var(--black);
+
             text-align: left;
             font: normal normal 300 16px/21px Averta CY;
-            letter-spacing: 0px;
+            letter-spacing: 0;
             opacity: 1;
         }
         .add-buttons{
@@ -222,11 +223,9 @@
             text-transform: uppercase;
             text-decoration: none;
             font-family: "Montserrat", sans-serif;
-            color: var(--black);
             text-align: left;
-            font: normal normal bold Montserrat;
             font-size: 28px;
-            letter-spacing: 0px;
+            letter-spacing: 0;
             opacity: 1;
         }
         header .trans_a {

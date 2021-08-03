@@ -20,12 +20,12 @@ class Problems(models.Model):
 class Projects(models.Model):
     # id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=90, null=False, verbose_name='Название проекта')
-    imprint = models.ImageField()
+    imprint = models.ImageField(null=True)
     shortdescription = models.CharField(max_length=500, null=False, verbose_name='Краткое описание')
     description = models.CharField(max_length=2000, null=False, verbose_name='Описание')
     problem = models.CharField(max_length=2000, null=False, verbose_name= 'Проблема')
     analysis = models.CharField(max_length=2000, null=False, verbose_name='Ситуация')
-    curator = models.CharField(max_length=45, verbose_name='Куратор')
+    curator = models.CharField(max_length=45, verbose_name='Куратор', null=True)
     project = models.ManyToManyField('Users', related_name='project', verbose_name='Руководитель проекта')
 
     def get_absolute_url(self):

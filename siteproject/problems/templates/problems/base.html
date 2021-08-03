@@ -1,31 +1,37 @@
 {% load static %}
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="{% static 'problems/css/styles.css' %}" rel="stylesheet" />
     <link type="text/css" href="{% static 'problems/css/fonts.css' %}" rel="stylesheet" />
-    <link rel="shortcut icon" href="{% static 'problems/images/avatar.png' %}" type="image/x-icon"/>
     <title>{{ title }}</title>
 
 </head>
 <body>
 {% block mainmenu %}
     <header>
-    <nav>
-        <ul>
-            <li class="trans_a"><a href="{% url 'home' %}"><div class="menu">Главная</div></a></li>
-            <li class="trans_a"><a href="{% url 'home' %}"><div class="menu">Проекты</div></a></li>
-            <li class="trans_a"><a href="{% url 'home' %}"><div class="menu">Информация</div></a></li>
-            <li class="trans_a"><a href="{% url 'home' %}"><div class="menu">Проблемы</div></a></li>
-            <li class="add-buttons"><a href="{% url 'add_page' %}"><div class="add-buttons_text">Добавить проблему</div></a> </li>
-            <li class="add-buttons"><a href="{% url 'add_page' %}"><div class="add-buttons_text">Добавить проект</div></a> </li>
-        </ul>
-    </nav>
-        <div class="account"></div>
+        <div class="header-contain">
+            <ul class="menu-block">
+                <li class="trans_a"><a href="{% url 'home' %}"><div class="menu">Информация</div></a></li>
+                <li class="trans_a"><a href="{% url 'home' %}"><div class="menu">Проекты</div></a></li>
+                <li class="trans_a"><a href="{% url 'home' %}"><div class="menu">Проблемы</div></a></li>
+            </ul>
+
+            <ul>
+                <li class="add-buttons"><a href="{% url 'add_page' %}"><div class="add-buttons_text">Добавить проблему</div></a> </li>
+                <li class="add-buttons"><a href="{% url 'add_page' %}"><div class="add-buttons_text">Добавить проект</div></a> </li>
+            </ul>
+            <div class="account"></div>
+        </div>
+
     </header>
 {% endblock mainmenu %}
+{% block picture %}
+<div class="block_picture">
+    <div> </div>
+</div>
+{% endblock %}
 
 {% block content %}
 {% endblock %}

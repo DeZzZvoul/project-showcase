@@ -3,8 +3,6 @@ from django.shortcuts import render, redirect, get_object_or_404
 
 from .forms import AddProjectForm
 from .models import *
-projects = Projects.objects.all()
-p = Projects.objects.get(id = 1)
 menu = ["Главная", "Проекты","Преподаватели", "Проблемы"]
 buttons = ["ДОБАВИТЬ ПРОБЛЕМУ", "ДОБАВИТЬ ПРОЕКТ"]
 def index(request):
