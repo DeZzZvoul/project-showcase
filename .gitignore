@@ -1,0 +1,12 @@
+/siteproject/problems/migrations/0001_initial.py
+/siteproject/problems/migrations/0002_alter_projects_project.py
+/siteproject/problems/migrations/0003_auto_20210521_1417.py
+/siteproject/problems/migrations/0004_auto_20210527_1724.py
+/siteproject/problems/migrations/__init__.py
+*.pyc
+*~
+__pycache__
+venv
+db.sqlite3
+/static
+.DS_Store
