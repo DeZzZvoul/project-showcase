@@ -2,6 +2,81 @@
 body{
     margin: 0 0 0 0;
 }
+picture{
+    max-height: 1050px;
+}
+    .pic_contain{
+
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/projects-page-picture-1920.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+    .pic_content{
+        padding-top: 80px;
+        padding-bottom: 20px;
+        width: 100%;
+        height: calc(100% - 100px);
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        size: auto;
+
+        flex-direction: column;
+    }
+    .l1{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .logo_title{
+        display: flex;
+        flex-direction: column;
+    }
+    .title1{
+        position: relative;
+        color: #434242;
+        text-align: left;
+        font: normal normal bold 15px Montserrat;
+        opacity: 1;
+        letter-spacing: 0;
+    }
+    .title2{
+        position: relative;
+        color: #434242;
+        text-align: left;
+        font: normal normal bold 50px/61px Montserrat;
+        opacity: 1;
+        letter-spacing: 0;
+    }.title3{
+        position: relative;
+        color: #434242;
+        text-align: left;
+        font: normal normal bold 100px/122px Montserrat;
+        opacity: 1;
+        letter-spacing: 0;
+    }
+     .l2{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     .arrow{
+         width: 24px;
+         height: 50px;
+         background-image: url('../images/Arrow.svg');
+     }
+    .logo{
+        position: relative;
+        background-image: url('../images/MMD logo.svg');
+        background-size: cover;
+        max-width: 176px;
+        max-height: 140px;
+        width: 176px;
+        height: 140px;
+    }
         @media (min-width: 1360px) {
             .col-projects{
                 width: 1300px;
@@ -16,7 +91,7 @@ body{
                 height: 410px;
             }
             .details{
-                transform: translateX(-100%);
+
             }
             .curator{
                 position: relative;
@@ -24,7 +99,7 @@ body{
         }
         @media (min-width: 1100px) and (max-width: 1359px) {
             .details{
-                transform: translateX(-100%);
+
             }
             .col-projects{
                 width: 1040px;
@@ -41,7 +116,7 @@ body{
                 height: 100%;
             }
             .details{
-                transform: translateX(-100%);
+
             }
             .col-projects{
                 max-width: 675px;
@@ -52,7 +127,91 @@ body{
                 height: 100%;
             }
                 }
+header{
+    width: 100%;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 0.9;
+        }
+        .header-contain{
+            max-width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+        }
+        ul {
+            list-style-type: none;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            height: 60px;
+            padding-inline-start: 0;
+            display: flex;
+            flex-flow: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+        }
+        .trans_a {
+            padding: 10px 15px;
+        }
+        .menu{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: left;
+            font: normal normal 300 16px/21px Averta CY;
+            letter-spacing: 0;
+            opacity: 1;
+        }
+        .add-buttons{
+            padding: 10px;
+        }
+        .account{
+            width: 50px;
+            height: 50px;
+            margin-right: 2em;
+            background: url('../images/Avatar.png') no-repeat;
+        }
+
+        header .add-buttons_text {
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: "Montserrat", sans-serif;
+            text-align: left;
+            font-size: 24px;
+            letter-spacing: 0;
+            opacity: 1;
+        }
+        header .trans_a {
+            font-weight: normal;
+        }
+        header #current {
+            color: #54b686;
+        }
+        header .add-buttons a {
+            text-decoration: none;
+            color: #434242;
+            font-weight: bold;
+        }
+        header .trans_a a {
+            text-decoration: none;
+            color: #434242;
+            font-weight: bold;
+        }
+        header .add-buttons a:hover {
+            color: #54b686;
+        }
+        header .trans_a a:hover{
+            color: #54b686;
+        }
+        .layout{
+            width: 1300px;
+            margin-right: auto;
+            margin-left: auto;
+        }
         .col-projects {
+            padding-top: 20px;
             margin-right: auto;
             margin-left: auto;
             display: grid;
@@ -69,10 +228,9 @@ body{
         }
         .content{
             position: relative;
-            max-width: 555px;
-            max-height: 600px;
         }
         .title{
+            height: 60px;
             position: relative;
             color: #434242;
             text-align: left;
@@ -92,6 +250,7 @@ body{
             padding-bottom: 15px;
         }
         .description{
+            height: calc(100% - 150px);
             position: relative;
             color: #898989;
             text-align: left;
@@ -103,9 +262,8 @@ body{
             opacity: 1;
         }
         .details{
-
+            left: calc(100% - 150px);
             position: relative;
-            left: 100%;
             width: 150px;
             height: 44px;
             border: none;
@@ -171,87 +329,4 @@ body{
             color: #FFFFFF;
             opacity: 1;
         }
-        header{
-            width: 100%;
-        }
-        .header-contain{
-            max-width: 80%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 80px;
-        }
-        ul {
-            list-style-type: none;
-        }
-        ul {
-            margin-block-start: 0;
-            margin-block-end: 0;
-            height: 60px;
-            padding-inline-start: 0;
-            display: flex;
-            flex-flow: nowrap;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            transition: .5s;
-        }
-        .trans_a {
-            padding: 10px 15px;
-        }
-        .menu{
-            text-transform: uppercase;
-            text-decoration: none;
 
-            text-align: left;
-            font: normal normal 300 16px/21px Averta CY;
-            letter-spacing: 0;
-            opacity: 1;
-        }
-        .add-buttons{
-            padding: 10px 15px;
-        }
-        .account{
-            width: 50px;
-            height: 50px;
-            margin-right: 2em;
-            background: url('../images/Avatar.png') no-repeat;
-        }
-
-        header .add-buttons_text {
-            text-transform: uppercase;
-            text-decoration: none;
-            font-family: "Montserrat", sans-serif;
-            text-align: left;
-            font-size: 28px;
-            letter-spacing: 0;
-            opacity: 1;
-        }
-        header .trans_a {
-            font-weight: normal;
-        }
-        header #current {
-            color: #54b686;
-        }
-        header .add-buttons a {
-            text-decoration: none;
-            color: #434242;
-            font-weight: bold;
-        }
-        header .trans_a a {
-            text-decoration: none;
-            color: #434242;
-            font-weight: bold;
-        }
-        header .add-buttons a:hover {
-            color: #54b686;
-        }
-        header .trans_a a:hover{
-            color: #54b686;
-        }
-        .layout{
-            width: 1300px;
-            margin-right: auto;
-            margin-left: auto;
-        }
