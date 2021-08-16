@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'problems.apps.ProblemsConfig',
-    'social_django',
+
 ]
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.google.GoogleOAuth2',
