@@ -29,6 +29,7 @@
     </header>
 {% endblock mainmenu %}
 {% block picture %}
+{% if p > 0%}
 <picture>
     <div class="pic_contain">
         <div class="pic_content">
@@ -40,13 +41,13 @@
                 </div>
             </div>
             <div class="l2">
-                <div class="title3">ПРОЕКТЫ</div>
+                <div class="title3">{{title2}}</div>
                 <div class="arrow"></div>
             </div>
         </div>
    </div>
-
 </picture>
+{% endif %}
 {% endblock %}
 
 {% block content %}

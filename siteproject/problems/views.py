@@ -7,14 +7,14 @@ menu = ["Главная", "Проекты","Преподаватели", "Про
 buttons = ["ДОБАВИТЬ ПРОБЛЕМУ", "ДОБАВИТЬ ПРОЕКТ"]
 def index(request):
     projects = Projects.objects.all()
-    return render(request,'problems/index.html', {'projects': projects,'menu': menu, 'title': 'Проекты', 'buttons':buttons})
+    return render(request,'problems/projects.html', {'p': 1, 'projects': projects,'menu': menu, 'title': 'Проектная площадка ММФ НГУ', 'buttons':buttons, 'title2':'ПРОЕКТЫ'})
 
 def projectpage(request, pr_id):
     p = get_object_or_404(Projects, pk=pr_id)
-    return render(request, 'problems/project_page.html', {'menu': menu,'buttons':buttons,'p': p})
+    return render(request, 'problems/project_page.html', {'p': 0, 'menu': menu,'buttons':buttons,'p': p, 'title': p.title})
 
 def main(request):
-    return  render(request,'problems/base.html', {'menu': menu,'buttons':buttons, 'title': 'Проектная площадка ММФ НГУ'})
+    return  render(request,'problems/base.html', { 'menu': menu,'buttons':buttons, 'title': 'Проектная площадка ММФ НГУ'})
 
 def addpage(request):
     if request.method == 'POST':

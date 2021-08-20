@@ -338,6 +338,9 @@ header{
             padding: 20px 30px 20px 30px;
         }
         .title_rect{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             position: relative;
             width: 1240px;
             height: 180px;
@@ -347,7 +350,6 @@ header{
             opacity: 1;
         }
         .pr_title{
-            padding-top: 30px;
             text-align: center;
             font: normal normal bold 70px/80px Montserrat;
             letter-spacing: 0;

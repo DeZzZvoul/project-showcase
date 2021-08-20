@@ -77,13 +77,14 @@ WSGI_APPLICATION = 'siteproject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+PASS = 'Pgm8C(7B6'
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'sitedb',
         'USER': 'root',
-        'PASSWORD': 'Pgm8C(7B6',
+        'PASSWORD': PASS,
         'HOST': 'localhost',
         'PORT': '3306',
     }
